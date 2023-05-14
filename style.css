@@ -292,8 +292,11 @@
     font-weight: 600;
   }
 
-/* Media Queries */
-  @media only screen and (max-width: 480px){
+
+  /*Media Queries*/
+
+  @media only screen and (max-width: 600px){
+
     .welcome {
       font-size: 1.2rem;
       font-weight: 400;
@@ -301,6 +304,7 @@
     
     .logo {
       height: 4rem;
+      margin: 0 2rem;
     }
 
     .login__input {
@@ -314,7 +318,7 @@
     .app{
 
       grid-template-columns: auto;
-      grid-template-rows: auto repeat(3, 10rem) auto;
+      grid-template-rows: auto repeat(3, 10rem) auto auto;
   }
 
   .balance {
@@ -326,7 +330,8 @@
     .balance__label {
       font-size: 1.5rem;
       font-weight: 400;
-      margin-right: 15rem;
+      margin-right: 20rem;
+
     }
     
     .balance__date {
@@ -339,11 +344,10 @@
     }
 
    .movements{
-      width: 98vw;
+      width: 95vw;
     }
 
-
-    .summary__label {
+     .summary__label {
       font-size: 1rem;
       margin-right: 0.5rem;
     }
@@ -351,6 +355,11 @@
     .summary__value {
       font-size: 1.8rem;
       margin-right: 1.5rem;
+    } 
+
+    .summary{
+      display: grid;
+      grid-template-columns: repeat(4, auto);
     }
 
     .btn--sort {
@@ -358,7 +367,7 @@
   }
 
   .operation{
-    width: 98vw;
+    width: 95vw;
   }
 
   .logout-timer{
@@ -366,4 +375,24 @@
   }
   }
 
+
+  @media only screen and (max-width: 480px) {
+    .balance__label{
+      margin-right: 8rem;
+    }
+
+    .movements{
+      width: 90vw;
+    }
+
+    .operation{
+      width: 90vw;
+    }
+
+    .login{
+      display: block;
+    }
+  }
+
+  
   
