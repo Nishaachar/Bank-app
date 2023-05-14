@@ -291,3 +291,79 @@
   .timer {
     font-weight: 600;
   }
+
+/* Media Queries */
+  @media only screen and (max-width: 480px){
+    .welcome {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    
+    .logo {
+      height: 4rem;
+    }
+
+    .login__input {
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      text-align: center;
+      width: 8rem;
+      margin-right: 0.5rem;
+    }
+
+    .app{
+
+      grid-template-columns: auto;
+      grid-template-rows: auto repeat(3, 10rem) auto;
+  }
+
+  .balance {
+    grid-column: 1;
+    align-items: stretch;
+    justify-content: flex-start;
+    }
+
+    .balance__label {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-right: 15rem;
+    }
+    
+    .balance__date {
+      font-size: 1rem;
+    }
+    
+    .balance__value {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+   .movements{
+      width: 98vw;
+    }
+
+
+    .summary__label {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+    
+    .summary__value {
+      font-size: 1.8rem;
+      margin-right: 1.5rem;
+    }
+
+    .btn--sort {
+      margin-left: 0;
+  }
+
+  .operation{
+    width: 98vw;
+  }
+
+  .logout-timer{
+    margin: 0 2rem 1rem 0;
+  }
+  }
+
+  
